@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine Recommendation</title>
+    <style>
+        /* Add styling to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpaper.dog/large/20589829.jpg'); /* Specify the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; /* Text color */
+        }
+
+        /* Style the header */
+        h1 {
+            text-align: center;
+            color: #fff; /* Header text color */
+            background-color: #007bff; /* Header background color */
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Form background color with transparency */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style form elements */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the form button on hover */
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Medicine Recommendation</h1>
+    <form method="POST" action="/analyze">
+        <label for="condition">Enter Medical Condition:</label>
+        <input type="text" id="condition" name="condition" required>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>

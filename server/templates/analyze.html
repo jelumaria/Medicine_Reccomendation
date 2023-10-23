@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Medicines for {{ condition }}</h1>
+    <ul>
+        {% for drug in drugs %}
+            <li>{{ drug }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

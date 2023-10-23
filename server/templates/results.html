@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine Recommendation Results</title>
+    <style>
+        /* Styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNhbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); /* Specify the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; /* Text color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Styling for the header */
+        h1 {
+            text-align: center;
+            color: #fff; /* Header text color */
+            background-color: #007bff; /* Header background color */
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Styling for recommended medicines */
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullets from the list */
+            padding: 0; /* Remove default padding */
+            text-align: center; /* Center-align the list items */
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results for Medical Condition: {{ condition }}</h1>
+    <h2>Recommended Medicines:</h2>
+    <ul>
+        {% for medicine in recommended_medicines %}
+        <li>{{ medicine }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
